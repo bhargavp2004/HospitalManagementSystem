@@ -2,15 +2,19 @@
 using System.Collections.Generic;
 using System.Data.SqlClient;
 using System.Linq;
+using System.ServiceModel;
 using System.Text;
 using System.Threading.Tasks;
 using HMSService.CompositeTypes;
 
 namespace HMSService
 {
+    [ServiceBehavior(InstanceContextMode = InstanceContextMode.PerSession)]
     public class PatientService : IPatientService
     {
+
         string ConnectionString = "Data Source=(localdb)\\MSSQLLocalDB;Initial Catalog=HospitalManagementSystem;Integrated Security=True;Connect Timeout=30;Encrypt=False;";
+        public string clientSessionId;
 
         string IPatientService.RegisterPatient(PatientRegistrationDetails p)
         {
@@ -79,7 +83,6 @@ namespace HMSService
         {
             try
             {
-                // Check if username and password are correct
                 using (SqlConnection connection = new SqlConnection(ConnectionString))
                 {
                     connection.Open();
@@ -110,11 +113,11 @@ namespace HMSService
                     {
                         return "Login Successful!";
                     }
-                    else if(adminloginCount > 0)
+                    else if (adminloginCount > 0)
                     {
                         return "Admin Login Successful!";
                     }
-                    else if(doctorloginCount > 0)
+                    else if (doctorloginCount > 0)
                     {
                         return "Doctor Login Successful!";
                     }
@@ -129,6 +132,66 @@ namespace HMSService
                 return "An error occurred during login: " + ex.Message;
             }
 
+        }
+
+        public int GetPatientIdByUsername(string username)
+        {
+            int patientId = -1;
+
+            try
+            {
+                using (SqlConnection connection = new SqlConnection(ConnectionString))
+                {
+                    string query = "SELECT patientId FROM Patients WHERE username = @Username";
+
+                    SqlCommand command = new SqlCommand(query, connection);
+                    command.Parameters.AddWithValue("@Username", username);
+
+                    connection.Open();
+                    object result = command.ExecuteScalar();
+
+                    if (result != null)
+                    {
+                        patientId = Convert.ToInt32(result);
+                    }
+                }
+            }
+            catch (Exception ex)
+            {
+                Console.WriteLine("Error: " + ex.Message);
+            }
+
+            return patientId;
+        }
+
+        public int GetPatientIdByName(string name)
+        {
+            int patientId = -1;
+
+            try
+            {
+                using (SqlConnection connection = new SqlConnection(ConnectionString))
+                {
+                    string query = "SELECT patientId FROM Patients WHERE name = @Name";
+
+                    SqlCommand command = new SqlCommand(query, connection);
+                    command.Parameters.AddWithValue("@Name", name);
+
+                    connection.Open();
+                    object result = command.ExecuteScalar();
+
+                    if (result != null)
+                    {
+                        patientId = Convert.ToInt32(result);
+                    }
+                }
+            }
+            catch (Exception ex)
+            {
+                Console.WriteLine("Error: " + ex.Message);
+            }
+
+            return patientId;
         }
     }
 }

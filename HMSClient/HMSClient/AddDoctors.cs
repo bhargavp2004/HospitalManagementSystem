@@ -8,6 +8,7 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 using HMSClient.AdminServiceRef;
+using HMSClient.DeptServiceRef;
 
 namespace HMSClient
 {
@@ -22,7 +23,7 @@ namespace HMSClient
 
         private void getDeptBtn_Click(object sender, EventArgs e)
         {
-            AdminServiceClient client = new AdminServiceClient();
+            DepartmentServiceClient client = new DepartmentServiceClient();
             string[] deptList = client.GetDepartments();
 
             foreach(string dept in deptList)
@@ -67,9 +68,10 @@ namespace HMSClient
                 }
                 else
                 {
-                    AdminServiceClient client = new AdminServiceClient();
-                    int deptId = client.GetDeptId(deptName);
+                    DepartmentServiceClient deptClient = new DepartmentServiceClient();
+                    int deptId = deptClient.GetDeptId(deptName);
 
+                    AdminServiceRef.AdminServiceClient client = new AdminServiceRef.AdminServiceClient();
                     AdminServiceRef.DoctorDetails d = new AdminServiceRef.DoctorDetails(name, username, password, email, mobile_no, deptId, address, gender);
                     string result = client.AddDoctor(d);
                     MessageBox.Show(result);
@@ -80,6 +82,16 @@ namespace HMSClient
                     }
                 }
             }
+        }
+
+        private void deptListBox_SelectedIndexChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void label9_Click(object sender, EventArgs e)
+        {
+
         }
     }
 }

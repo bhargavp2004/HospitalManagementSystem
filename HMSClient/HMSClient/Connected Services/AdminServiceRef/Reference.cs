@@ -197,18 +197,6 @@ namespace HMSClient.AdminServiceRef {
         
         [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/IAdminService/AddDepartment", ReplyAction="http://tempuri.org/IAdminService/AddDepartmentResponse")]
         System.Threading.Tasks.Task<string> AddDepartmentAsync(string deptName);
-        
-        [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/IAdminService/GetDepartments", ReplyAction="http://tempuri.org/IAdminService/GetDepartmentsResponse")]
-        string[] GetDepartments();
-        
-        [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/IAdminService/GetDepartments", ReplyAction="http://tempuri.org/IAdminService/GetDepartmentsResponse")]
-        System.Threading.Tasks.Task<string[]> GetDepartmentsAsync();
-        
-        [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/IAdminService/GetDeptId", ReplyAction="http://tempuri.org/IAdminService/GetDeptIdResponse")]
-        int GetDeptId(string deptName);
-        
-        [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/IAdminService/GetDeptId", ReplyAction="http://tempuri.org/IAdminService/GetDeptIdResponse")]
-        System.Threading.Tasks.Task<int> GetDeptIdAsync(string deptName);
     }
     
     [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
@@ -252,22 +240,6 @@ namespace HMSClient.AdminServiceRef {
         
         public System.Threading.Tasks.Task<string> AddDepartmentAsync(string deptName) {
             return base.Channel.AddDepartmentAsync(deptName);
-        }
-        
-        public string[] GetDepartments() {
-            return base.Channel.GetDepartments();
-        }
-        
-        public System.Threading.Tasks.Task<string[]> GetDepartmentsAsync() {
-            return base.Channel.GetDepartmentsAsync();
-        }
-        
-        public int GetDeptId(string deptName) {
-            return base.Channel.GetDeptId(deptName);
-        }
-        
-        public System.Threading.Tasks.Task<int> GetDeptIdAsync(string deptName) {
-            return base.Channel.GetDeptIdAsync(deptName);
         }
     }
 }

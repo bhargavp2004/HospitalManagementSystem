@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<ReferenceGroup xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" ID="6d0b56d2-9730-4abc-8052-4bfb88adbd5e" xmlns="urn:schemas-microsoft-com:xml-wcfservicemap">
+<ReferenceGroup xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" ID="578db79e-e445-4a92-b9a2-aa563ef3c970" xmlns="urn:schemas-microsoft-com:xml-wcfservicemap">
   <ClientOptions>
     <GenerateAsynchronousMethods>false</GenerateAsynchronousMethods>
     <GenerateTaskBasedAsynchronousMethod>true</GenerateTaskBasedAsynchronousMethod>
@@ -22,11 +22,10 @@
     <MetadataSource Address="http://localhost:8733/Design_Time_Addresses/HMSService/AdminService/mex" Protocol="mex" SourceId="1" />
   </MetadataSources>
   <Metadata>
-    <MetadataFile FileName="service.wsdl" MetadataType="Wsdl" ID="c98a2a20-1a2b-4444-befc-c0f819348c0b" SourceId="1" SourceUrl="http://localhost:8733/Design_Time_Addresses/HMSService/AdminService/mex" />
-    <MetadataFile FileName="service.xsd" MetadataType="Schema" ID="5d33fab7-6f94-465e-9837-b50f9ae2ff43" SourceId="1" SourceUrl="http://localhost:8733/Design_Time_Addresses/HMSService/AdminService/mex" />
-    <MetadataFile FileName="service1.xsd" MetadataType="Schema" ID="70354e75-36be-4536-8f01-4b3080088b33" SourceId="1" SourceUrl="http://localhost:8733/Design_Time_Addresses/HMSService/AdminService/mex" />
-    <MetadataFile FileName="HMSService.xsd" MetadataType="Schema" ID="d0b46fdc-d422-4ba8-bc6f-8b8ae9656bbf" SourceId="1" SourceUrl="http://localhost:8733/Design_Time_Addresses/HMSService/AdminService/mex" />
-    <MetadataFile FileName="Arrays.xsd" MetadataType="Schema" ID="02120fc3-48fc-4d49-80dc-1e1569f908d9" SourceId="1" SourceUrl="http://localhost:8733/Design_Time_Addresses/HMSService/AdminService/mex" />
+    <MetadataFile FileName="service.wsdl" MetadataType="Wsdl" ID="ce9d6bdd-0fbd-42d8-999e-13045190d12a" SourceId="1" SourceUrl="http://localhost:8733/Design_Time_Addresses/HMSService/AdminService/mex" />
+    <MetadataFile FileName="service.xsd" MetadataType="Schema" ID="ee94ce7c-946d-4253-8a90-9678192b02d9" SourceId="1" SourceUrl="http://localhost:8733/Design_Time_Addresses/HMSService/AdminService/mex" />
+    <MetadataFile FileName="service1.xsd" MetadataType="Schema" ID="1e0e0bd0-bbef-4bbb-b92c-27f6db98a612" SourceId="1" SourceUrl="http://localhost:8733/Design_Time_Addresses/HMSService/AdminService/mex" />
+    <MetadataFile FileName="HMSService.xsd" MetadataType="Schema" ID="d4ec62dd-398f-4d9a-914c-0c0640bbb450" SourceId="1" SourceUrl="http://localhost:8733/Design_Time_Addresses/HMSService/AdminService/mex" />
   </Metadata>
   <Extensions>
     <ExtensionFile FileName="configuration91.svcinfo" Name="configuration91.svcinfo" />

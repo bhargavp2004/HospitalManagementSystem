@@ -5,3 +5,10 @@ D:\B.TECH\6TH SEMESTER\WSD\Lab5\HMSService\HMSService\obj\Debug\HMSService.cspro
 D:\B.TECH\6TH SEMESTER\WSD\Lab5\HMSService\HMSService\obj\Debug\HMSService.csproj.CoreCompileInputs.cache
 D:\B.TECH\6TH SEMESTER\WSD\Lab5\HMSService\HMSService\obj\Debug\HMSService.dll
 D:\B.TECH\6TH SEMESTER\WSD\Lab5\HMSService\HMSService\obj\Debug\HMSService.pdb
+D:\B.TECH\6TH SEMESTER\WSD\Project\HospitalManagementSystem\HMSService\HMSService\bin\Debug\HMSService.dll.config
+D:\B.TECH\6TH SEMESTER\WSD\Project\HospitalManagementSystem\HMSService\HMSService\bin\Debug\HMSService.dll
+D:\B.TECH\6TH SEMESTER\WSD\Project\HospitalManagementSystem\HMSService\HMSService\bin\Debug\HMSService.pdb
+D:\B.TECH\6TH SEMESTER\WSD\Project\HospitalManagementSystem\HMSService\HMSService\obj\Debug\HMSService.csproj.AssemblyReference.cache
+D:\B.TECH\6TH SEMESTER\WSD\Project\HospitalManagementSystem\HMSService\HMSService\obj\Debug\HMSService.csproj.CoreCompileInputs.cache
+D:\B.TECH\6TH SEMESTER\WSD\Project\HospitalManagementSystem\HMSService\HMSService\obj\Debug\HMSService.dll
+D:\B.TECH\6TH SEMESTER\WSD\Project\HospitalManagementSystem\HMSService\HMSService\obj\Debug\HMSService.pdb

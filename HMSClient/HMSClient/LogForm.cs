@@ -33,23 +33,29 @@ namespace HMSClient
             }
             else
             {
-                LoginDetails loginDetails = new LoginDetails(username, password) ; 
+                LoginDetails loginDetails = new LoginDetails(username, password); 
                 string result = client.PatientLogin(loginDetails);
                 MessageBox.Show(result);
                 if(result == "Login Successful!")
                 {
+                    InformationManager.Username = username;
+                    InformationManager.Role = "Patient";
                     usernameText.Text = "";
                     passwordText.Text = "";
                     LoginSuccessful?.Invoke(this, EventArgs.Empty);
                 }
                 else if(result == "Admin Login Successful!")
                 {
+                    InformationManager.Username = username;
+                    InformationManager.Role = "Admin";
                     usernameText.Text = "";
                     passwordText.Text = "";
                     AdminLoginSuccessful?.Invoke(this, EventArgs.Empty);
                 }
                 else if(result == "Doctor Login Successful!")
                 {
+                    InformationManager.Username = username;
+                    InformationManager.Role = "Doctor";
                     usernameText.Text = "";
                     passwordText.Text = "";
                     DoctorLoginSuccessful?.Invoke(this, EventArgs.Empty);

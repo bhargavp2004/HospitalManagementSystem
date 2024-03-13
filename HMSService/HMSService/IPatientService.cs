@@ -16,5 +16,11 @@ namespace HMSService
 
         [OperationContract]
         string PatientLogin(LoginDetails d);
+
+        [OperationContract]
+        int GetPatientIdByUsername(string username);
+
+        [OperationContract]
+        int GetPatientIdByName(string name);
     }
 }

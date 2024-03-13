@@ -37,11 +37,13 @@
             this.loginBtn = new System.Windows.Forms.Button();
             this.registerBtn = new System.Windows.Forms.Button();
             this.homeBtn = new System.Windows.Forms.Button();
+            this.aptList1 = new HMSClient.AptList();
+            this.bookApt1 = new HMSClient.BookApt();
+            this.addDoctors1 = new HMSClient.AddDoctors();
             this.addDepartment1 = new HMSClient.AddDepartment();
             this.homeMain1 = new HMSClient.HomeMain();
             this.regForm1 = new HMSClient.RegForm();
             this.logForm1 = new HMSClient.LogForm();
-            this.addDoctors1 = new HMSClient.AddDoctors();
             this.panel4.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -64,17 +66,17 @@
             // 
             // bookAptBtn
             // 
-            this.bookAptBtn.FlatAppearance.BorderSize = 0;
+            this.bookAptBtn.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(64)))));
             this.bookAptBtn.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.bookAptBtn.Font = new System.Drawing.Font("Segoe UI", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.bookAptBtn.ForeColor = System.Drawing.Color.White;
-            this.bookAptBtn.Location = new System.Drawing.Point(12, 481);
+            this.bookAptBtn.Location = new System.Drawing.Point(-4, 467);
             this.bookAptBtn.Name = "bookAptBtn";
-            this.bookAptBtn.Size = new System.Drawing.Size(251, 63);
-            this.bookAptBtn.TabIndex = 0;
+            this.bookAptBtn.Size = new System.Drawing.Size(284, 51);
+            this.bookAptBtn.TabIndex = 1;
             this.bookAptBtn.Text = "Book Appointment";
             this.bookAptBtn.UseVisualStyleBackColor = true;
-            this.bookAptBtn.Click += new System.EventHandler(this.viewAptBtn_Click);
+            this.bookAptBtn.Click += new System.EventHandler(this.bookAptBtn_Click);
             // 
             // viewAptBtn
             // 
@@ -173,6 +175,30 @@
             this.homeBtn.TabIndex = 0;
             this.homeBtn.Text = "Home";
             this.homeBtn.UseVisualStyleBackColor = true;
+            this.homeBtn.Click += new System.EventHandler(this.homeBtn_Click);
+            // 
+            // aptList1
+            // 
+            this.aptList1.Location = new System.Drawing.Point(280, 12);
+            this.aptList1.Name = "aptList1";
+            this.aptList1.Size = new System.Drawing.Size(1053, 1033);
+            this.aptList1.TabIndex = 9;
+            // 
+            // bookApt1
+            // 
+            this.bookApt1.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.bookApt1.Location = new System.Drawing.Point(280, 0);
+            this.bookApt1.Name = "bookApt1";
+            this.bookApt1.Size = new System.Drawing.Size(1053, 1045);
+            this.bookApt1.TabIndex = 8;
+            // 
+            // addDoctors1
+            // 
+            this.addDoctors1.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.addDoctors1.Location = new System.Drawing.Point(280, 0);
+            this.addDoctors1.Name = "addDoctors1";
+            this.addDoctors1.Size = new System.Drawing.Size(1053, 1045);
+            this.addDoctors1.TabIndex = 7;
             // 
             // addDepartment1
             // 
@@ -207,17 +233,11 @@
             this.logForm1.Size = new System.Drawing.Size(1053, 1045);
             this.logForm1.TabIndex = 3;
             // 
-            // addDoctors1
-            // 
-            this.addDoctors1.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.addDoctors1.Location = new System.Drawing.Point(280, 0);
-            this.addDoctors1.Name = "addDoctors1";
-            this.addDoctors1.Size = new System.Drawing.Size(1053, 1045);
-            this.addDoctors1.TabIndex = 7;
-            // 
             // Form1
             // 
             this.ClientSize = new System.Drawing.Size(1333, 1045);
+            this.Controls.Add(this.aptList1);
+            this.Controls.Add(this.bookApt1);
             this.Controls.Add(this.addDoctors1);
             this.Controls.Add(this.addDepartment1);
             this.Controls.Add(this.homeMain1);
@@ -252,9 +272,11 @@
         private System.Windows.Forms.Button addDepartmentBtn;
         private System.Windows.Forms.Button addDoctorsBtn;
         private HomeMain homeMain1;
-        private System.Windows.Forms.Button bookAptBtn;
         private AddDepartment addDepartment1;
         private AddDoctors addDoctors1;
+        private BookApt bookApt1;
+        private System.Windows.Forms.Button bookAptBtn;
+        private AptList aptList1;
     }
 }
 

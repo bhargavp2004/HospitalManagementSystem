@@ -4,7 +4,7 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>{1B6813A5-7BCC-4D0E-9460-DE637F0D4874}</ProjectGuid>
+    <ProjectGuid>{69AD1BF6-BA5F-41FB-895D-56BE97384686}</ProjectGuid>
     <OutputType>WinExe</OutputType>
     <RootNamespace>HMSHost</RootNamespace>
     <AssemblyName>HMSHost</AssemblyName>

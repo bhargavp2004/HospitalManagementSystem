@@ -250,6 +250,67 @@ namespace HMSClient.PatientServiceRef {
     }
     
     [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
+    [System.ServiceModel.ServiceContractAttribute(ConfigurationName="PatientServiceRef.IDoctorService")]
+    public interface IDoctorService {
+        
+        [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/IDoctorService/GetDoctorsByDeptId", ReplyAction="http://tempuri.org/IDoctorService/GetDoctorsByDeptIdResponse")]
+        string[] GetDoctorsByDeptId(int deptId);
+        
+        [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/IDoctorService/GetDoctorsByDeptId", ReplyAction="http://tempuri.org/IDoctorService/GetDoctorsByDeptIdResponse")]
+        System.Threading.Tasks.Task<string[]> GetDoctorsByDeptIdAsync(int deptId);
+        
+        [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/IDoctorService/GetDoctorIdByName", ReplyAction="http://tempuri.org/IDoctorService/GetDoctorIdByNameResponse")]
+        int GetDoctorIdByName(string name);
+        
+        [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/IDoctorService/GetDoctorIdByName", ReplyAction="http://tempuri.org/IDoctorService/GetDoctorIdByNameResponse")]
+        System.Threading.Tasks.Task<int> GetDoctorIdByNameAsync(string name);
+    }
+    
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
+    public interface IDoctorServiceChannel : HMSClient.PatientServiceRef.IDoctorService, System.ServiceModel.IClientChannel {
+    }
+    
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
+    public partial class DoctorServiceClient : System.ServiceModel.ClientBase<HMSClient.PatientServiceRef.IDoctorService>, HMSClient.PatientServiceRef.IDoctorService {
+        
+        public DoctorServiceClient() {
+        }
+        
+        public DoctorServiceClient(string endpointConfigurationName) : 
+                base(endpointConfigurationName) {
+        }
+        
+        public DoctorServiceClient(string endpointConfigurationName, string remoteAddress) : 
+                base(endpointConfigurationName, remoteAddress) {
+        }
+        
+        public DoctorServiceClient(string endpointConfigurationName, System.ServiceModel.EndpointAddress remoteAddress) : 
+                base(endpointConfigurationName, remoteAddress) {
+        }
+        
+        public DoctorServiceClient(System.ServiceModel.Channels.Binding binding, System.ServiceModel.EndpointAddress remoteAddress) : 
+                base(binding, remoteAddress) {
+        }
+        
+        public string[] GetDoctorsByDeptId(int deptId) {
+            return base.Channel.GetDoctorsByDeptId(deptId);
+        }
+        
+        public System.Threading.Tasks.Task<string[]> GetDoctorsByDeptIdAsync(int deptId) {
+            return base.Channel.GetDoctorsByDeptIdAsync(deptId);
+        }
+        
+        public int GetDoctorIdByName(string name) {
+            return base.Channel.GetDoctorIdByName(name);
+        }
+        
+        public System.Threading.Tasks.Task<int> GetDoctorIdByNameAsync(string name) {
+            return base.Channel.GetDoctorIdByNameAsync(name);
+        }
+    }
+    
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
     [System.ServiceModel.ServiceContractAttribute(ConfigurationName="PatientServiceRef.IPatientService")]
     public interface IPatientService {
         
@@ -264,6 +325,18 @@ namespace HMSClient.PatientServiceRef {
         
         [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/IPatientService/PatientLogin", ReplyAction="http://tempuri.org/IPatientService/PatientLoginResponse")]
         System.Threading.Tasks.Task<string> PatientLoginAsync(HMSClient.PatientServiceRef.LoginDetails d);
+        
+        [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/IPatientService/GetPatientIdByUsername", ReplyAction="http://tempuri.org/IPatientService/GetPatientIdByUsernameResponse")]
+        int GetPatientIdByUsername(string username);
+        
+        [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/IPatientService/GetPatientIdByUsername", ReplyAction="http://tempuri.org/IPatientService/GetPatientIdByUsernameResponse")]
+        System.Threading.Tasks.Task<int> GetPatientIdByUsernameAsync(string username);
+        
+        [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/IPatientService/GetPatientIdByName", ReplyAction="http://tempuri.org/IPatientService/GetPatientIdByNameResponse")]
+        int GetPatientIdByName(string name);
+        
+        [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/IPatientService/GetPatientIdByName", ReplyAction="http://tempuri.org/IPatientService/GetPatientIdByNameResponse")]
+        System.Threading.Tasks.Task<int> GetPatientIdByNameAsync(string name);
     }
     
     [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
@@ -307,6 +380,22 @@ namespace HMSClient.PatientServiceRef {
         
         public System.Threading.Tasks.Task<string> PatientLoginAsync(HMSClient.PatientServiceRef.LoginDetails d) {
             return base.Channel.PatientLoginAsync(d);
+        }
+        
+        public int GetPatientIdByUsername(string username) {
+            return base.Channel.GetPatientIdByUsername(username);
+        }
+        
+        public System.Threading.Tasks.Task<int> GetPatientIdByUsernameAsync(string username) {
+            return base.Channel.GetPatientIdByUsernameAsync(username);
+        }
+        
+        public int GetPatientIdByName(string name) {
+            return base.Channel.GetPatientIdByName(name);
+        }
+        
+        public System.Threading.Tasks.Task<int> GetPatientIdByNameAsync(string name) {
+            return base.Channel.GetPatientIdByNameAsync(name);
         }
     }
 }

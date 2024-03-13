@@ -15,11 +15,5 @@ namespace HMSService
 
         [OperationContract]
         string AddDepartment(string deptName);
-
-        [OperationContract]
-        List<string> GetDepartments();
-
-        [OperationContract]
-        int GetDeptId(string deptName);
     }
 }

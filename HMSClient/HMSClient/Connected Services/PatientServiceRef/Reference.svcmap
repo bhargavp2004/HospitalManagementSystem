@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<ReferenceGroup xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" ID="11365f6e-a9cb-4c01-bee6-c17bfe2a437e" xmlns="urn:schemas-microsoft-com:xml-wcfservicemap">
+<ReferenceGroup xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" ID="fd6926e7-f40e-44ed-8fbd-c09e1732bb6d" xmlns="urn:schemas-microsoft-com:xml-wcfservicemap">
   <ClientOptions>
     <GenerateAsynchronousMethods>false</GenerateAsynchronousMethods>
     <GenerateTaskBasedAsynchronousMethod>true</GenerateTaskBasedAsynchronousMethod>
@@ -22,10 +22,11 @@
     <MetadataSource Address="http://localhost:8733/Design_Time_Addresses/HMSService/PatientService/mex" Protocol="mex" SourceId="1" />
   </MetadataSources>
   <Metadata>
-    <MetadataFile FileName="service.wsdl" MetadataType="Wsdl" ID="ca9115db-db20-4998-9a40-dec82f7e46f9" SourceId="1" SourceUrl="http://localhost:8733/Design_Time_Addresses/HMSService/PatientService/mex" />
-    <MetadataFile FileName="service.xsd" MetadataType="Schema" ID="cac69274-ed76-4862-adee-17ab59af7c95" SourceId="1" SourceUrl="http://localhost:8733/Design_Time_Addresses/HMSService/PatientService/mex" />
-    <MetadataFile FileName="service1.xsd" MetadataType="Schema" ID="588af510-6f6c-4df6-a824-2bec27050119" SourceId="1" SourceUrl="http://localhost:8733/Design_Time_Addresses/HMSService/PatientService/mex" />
-    <MetadataFile FileName="HMSService.CompositeTypes.xsd" MetadataType="Schema" ID="46d5ca4d-4782-4bc6-8b54-687c47168c40" SourceId="1" SourceUrl="http://localhost:8733/Design_Time_Addresses/HMSService/PatientService/mex" />
+    <MetadataFile FileName="service.wsdl" MetadataType="Wsdl" ID="b4432d87-e306-46f7-af37-870ccfdc752e" SourceId="1" SourceUrl="http://localhost:8733/Design_Time_Addresses/HMSService/PatientService/mex" />
+    <MetadataFile FileName="service.xsd" MetadataType="Schema" ID="55f520e1-1088-4eef-bc82-d7ad34bae4f8" SourceId="1" SourceUrl="http://localhost:8733/Design_Time_Addresses/HMSService/PatientService/mex" />
+    <MetadataFile FileName="service1.xsd" MetadataType="Schema" ID="a0f56ce0-640b-46b0-b3b7-2e040c20194d" SourceId="1" SourceUrl="http://localhost:8733/Design_Time_Addresses/HMSService/PatientService/mex" />
+    <MetadataFile FileName="Arrays.xsd" MetadataType="Schema" ID="a75d53f8-210a-4d5d-ab3e-02d3915fba67" SourceId="1" SourceUrl="http://localhost:8733/Design_Time_Addresses/HMSService/PatientService/mex" />
+    <MetadataFile FileName="HMSService.CompositeTypes.xsd" MetadataType="Schema" ID="a5d6e078-7040-4f72-8121-8fd6810b4b58" SourceId="1" SourceUrl="http://localhost:8733/Design_Time_Addresses/HMSService/PatientService/mex" />
   </Metadata>
   <Extensions>
     <ExtensionFile FileName="configuration91.svcinfo" Name="configuration91.svcinfo" />
